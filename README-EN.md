@@ -17,7 +17,7 @@ This is a VS Code plugin that is easy to configure the ROS 2 development environ
    |--src_0
    |--src_1
 
-2. Modify the path in `c_cpp_properties.json` in the `.vscode` directory, if `ROS 2` is compiled according to the source code and specified to the `/opt/ros2/galactic` directory, the path is `/opt/ros2/galactic /include/**`, at the same time, it is necessary to ensure that all paths related to `/opt/` are consistent with the path.
+2. Modify the path in `c_cpp_properties.json` in the `.vscode` directory, if `ROS 2` is compiled according to the source code and specified to the `/opt/ros/humble` directory, the path is `/opt/ros/humble /include/**`, at the same time, it is necessary to ensure that all paths related to `/opt/` are consistent with the path.
 3. If you use a different C/C++ version, such as C11, C++ 17, you need to modify `cStandard` in `c_cpp_properties.json` to `C11`, and `cppStandard` to `C++17`.
 4. Batch replace the `Python` version to the `Python` version on the device, the file is `settings.json`, find `python3.` in it, and then modify the following number to your own version. Generally speaking, Ubuntu 18.04 is Python3.6 , Ubuntu 20.04 is Python 3.8, I am using Arch Linux, which corresponds to Python 3.9.
 5. Open VS Code in the root directory of the workspace and run `code .`.
